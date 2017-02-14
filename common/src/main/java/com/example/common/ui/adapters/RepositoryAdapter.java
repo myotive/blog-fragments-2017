@@ -1,4 +1,4 @@
-package com.example.common.ui;
+package com.example.common.ui.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -31,7 +31,7 @@ public class RepositoryAdapter extends RecyclerView.Adapter<RepositoryAdapter.Re
     private List<Repository> repositories;
     private RepositoryItemClick itemClickCallback;
 
-    private DateTimeFormatter dtf = DateTimeFormat.forPattern("MM/dd/yyyy HH:mm");
+    private DateTimeFormatter dtf = DateTimeFormat.forPattern("MM/dd/yyyy hh:mm a");
 
     public RepositoryAdapter(Context context, List<Repository> repositories, RepositoryItemClick itemClickCallback){
         this.context = context;

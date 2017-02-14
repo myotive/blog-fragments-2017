@@ -15,7 +15,7 @@ import com.example.common.BaseApplication;
 import com.example.common.network.GitHubAPI;
 import com.example.common.network.models.Repository;
 import com.example.common.ui.ProgressBarProvider;
-import com.example.common.ui.RepositoryAdapter;
+import com.example.common.ui.adapters.RepositoryAdapter;
 import com.example.common.utilities.FragmentUtility;
 import com.example.common.utilities.TransitionType;
 
@@ -77,7 +77,7 @@ public class RepositoryFragment extends Fragment implements RepositoryAdapter.Re
         setActionBar();
 
         progressBarProvider.showProgressBar();
-        githubAPI.GetRepos("myotive").enqueue(new Callback<List<Repository>>() {
+        githubAPI.GetRepos(BuildConfig.GITHUB_OWNER).enqueue(new Callback<List<Repository>>() {
             @Override
             public void onResponse(Call<List<Repository>> call, Response<List<Repository>> response) {
                 repositoryAdapter.swapData(response.body());

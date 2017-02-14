@@ -8,13 +8,13 @@ import com.google.gson.annotations.Expose;
 
 public class Content {
     @Expose
-    String name;
+    private String name;
     @Expose
-    String path;
+    private String path;
     @Expose
-    String html_url;
+    private String html_url;
     @Expose
-    String type;
+    private String type;
 
     public String getName() {
         return name;
