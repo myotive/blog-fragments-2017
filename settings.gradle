@@ -1,1 +1,1 @@
-include ':fragment_sample', ':common'
+include ':fragment_sample', ':common', ':conductor_sample'

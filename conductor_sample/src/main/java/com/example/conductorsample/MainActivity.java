@@ -1,4 +1,4 @@
-package com.example.myotive.blog_fragments_2017;
+package com.example.conductorsample;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -7,31 +7,40 @@ import android.view.View;
 import android.widget.FrameLayout;
 import android.widget.ProgressBar;
 
+import com.bluelinelabs.conductor.Conductor;
+import com.bluelinelabs.conductor.Router;
+import com.bluelinelabs.conductor.RouterTransaction;
+import com.example.common.BaseApplication;
+import com.example.common.network.GitHubAPI;
+import com.example.common.ui.ActionBarProvider;
 import com.example.common.ui.ProgressBarProvider;
+import com.example.conductorsample.controllers.RepositoryController;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class MainActivity extends AppCompatActivity  implements ProgressBarProvider{
+public class MainActivity extends AppCompatActivity implements ProgressBarProvider, ActionBarProvider {
 
     @BindView(R.id.loading)
     ProgressBar progressBar;
     @BindView(R.id.main_content)
     FrameLayout mainContent;
+    private Router router;
 
     @Override
+
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
 
-        if(savedInstanceState == null) {
-            getSupportFragmentManager()
-                    .beginTransaction()
-                    .add(R.id.main_content, RepositoryFragment.newInstance())
-                    .commitNow();
-        }
+        router = Conductor.attachRouter(this, mainContent, savedInstanceState);
 
+        GitHubAPI api = BaseApplication.getApplication(getApplicationContext()).getApplicationComponent().githubapi();
+
+        if (!router.hasRootController()) {
+            router.setRoot(RouterTransaction.with(new RepositoryController(api)));
+        }
     }
 
     @Override
@@ -47,19 +56,20 @@ public class MainActivity extends AppCompatActivity  implements ProgressBarProvi
 
     @Override
     public void onBackPressed() {
-        super.onBackPressed();
-        if(getSupportFragmentManager().getBackStackEntryCount() > 0){
-            getSupportFragmentManager().popBackStack();
+        if (!router.handleBack()) {
+            super.onBackPressed();
         }
     }
 
     @Override
     public void showProgressBar() {
+        mainContent.setVisibility(View.GONE);
         progressBar.setVisibility(View.VISIBLE);
     }
 
     @Override
     public void hideProgressBar() {
+        mainContent.setVisibility(View.VISIBLE);
         progressBar.setVisibility(View.GONE);
     }
 }
