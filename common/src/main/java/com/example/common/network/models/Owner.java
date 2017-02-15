@@ -2,19 +2,20 @@ package com.example.common.network.models;
 
 import com.google.gson.annotations.Expose;
 
+import java.io.Serializable;
 import java.util.UUID;
 
 /**
  * Created by myotive on 2/12/2017.
  */
 
-public class Owner {
+public class Owner implements Serializable {
     @Expose
-    String id;
+    private String id;
     @Expose
-    String login;
+    private String login;
     @Expose
-    String avatar_url;
+    private String avatar_url;
 
     public String getId() {
         return id;

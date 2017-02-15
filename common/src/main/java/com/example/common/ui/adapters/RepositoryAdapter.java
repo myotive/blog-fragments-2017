@@ -44,6 +44,10 @@ public class RepositoryAdapter extends RecyclerView.Adapter<RepositoryAdapter.Re
         this.notifyDataSetChanged();
     }
 
+    public void setRepositoryItemClick(RepositoryItemClick repositoryItemClick){
+        this.itemClickCallback = repositoryItemClick;
+    }
+
     @Override
     public RepositoryViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_repository, null);

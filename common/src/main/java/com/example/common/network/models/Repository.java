@@ -12,15 +12,15 @@ import java.io.Serializable;
 
 public class Repository implements Serializable {
     @Expose
-    String id;
+    private String id;
     @Expose
-    String name;
+    private String name;
     @Expose
-    String description;
+    private String description;
     @Expose
-    Owner owner;
+    private Owner owner;
     @Expose
-    DateTime created_at;
+    private DateTime created_at;
 
     public String getId() {
         return id;
