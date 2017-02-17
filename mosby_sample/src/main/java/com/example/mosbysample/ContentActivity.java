@@ -31,16 +31,7 @@ public class ContentActivity extends AppCompatActivity implements RepositoryProv
             repository = (Repository)getIntent().getSerializableExtra(REPOSITORY_EXTRA);
         }
 
-        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-
         ButterKnife.bind(this);
-    }
-
-    @Override
-    public void finish() {
-        super.finish();
-
-        overridePendingTransition(R.anim.slide_in_left, R.anim.slide_out_right);
     }
 
     @Override

@@ -20,10 +20,11 @@ public class RepositoryActivity extends AppCompatActivity implements ProgressBar
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_repository);
 
-        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
-
         ButterKnife.bind(this);
+
+        overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
     }
+
 
     @Override
     protected void onResume() {

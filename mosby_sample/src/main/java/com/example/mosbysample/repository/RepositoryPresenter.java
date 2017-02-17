@@ -1,5 +1,6 @@
 package com.example.mosbysample.repository;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.util.Log;
@@ -11,6 +12,7 @@ import com.example.common.ui.ProgressBarProvider;
 import com.example.common.ui.adapters.RepositoryAdapter;
 import com.example.mosbysample.BuildConfig;
 import com.example.mosbysample.ContentActivity;
+import com.example.mosbysample.R;
 import com.hannesdorfmann.mosby.mvp.MvpBasePresenter;
 
 import java.util.List;
@@ -31,6 +33,8 @@ public class RepositoryPresenter extends MvpBasePresenter<RepositoryContract.Vie
     private GitHubAPI gitHubAPI;
     private ProgressBarProvider progressBarProvider;
 
+    private List<Repository> repositories;
+
     public RepositoryPresenter(GitHubAPI gitHubAPI, ProgressBarProvider progressBarProvider){
         this.gitHubAPI = gitHubAPI;
         this.progressBarProvider = progressBarProvider;
@@ -44,16 +48,20 @@ public class RepositoryPresenter extends MvpBasePresenter<RepositoryContract.Vie
             @Override
             public void OnRepositoryItemClick(View view, Repository item) {
 
-                Context context = view.getContext().getApplicationContext();
+                Activity activity = (Activity)view.getContext();
 
-                Intent intent = new Intent(context, ContentActivity.class);
+                Intent intent = new Intent(activity, ContentActivity.class);
                 intent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
                 intent.putExtra(ContentActivity.REPOSITORY_EXTRA, item);
-                context.startActivity(intent);
+                activity.startActivity(intent);
+                activity.overridePendingTransition(R.anim.slide_in_right, R.anim.slide_out_left);
             }
         });
 
-        getRepositories();
+        // To prevent getting rate limited, I'm going to cache the repositories here
+        if(repositories == null) {
+            getRepositories();
+        }
     }
 
     @Override
@@ -64,7 +72,8 @@ public class RepositoryPresenter extends MvpBasePresenter<RepositoryContract.Vie
             @Override
             public void onResponse(Call<List<Repository>> call, Response<List<Repository>> response) {
                 if(response.isSuccessful() && isViewAttached()){
-                    getView().updateRepositoryList(response.body());
+                    repositories = response.body();
+                    getView().updateRepositoryList(repositories);
                 }
 
                 progressBarProvider.hideProgressBar();

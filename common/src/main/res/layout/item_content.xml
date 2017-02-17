@@ -3,8 +3,11 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:clickable="true"
+    android:background="?android:attr/selectableItemBackground"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:padding="5dp">
 
     <ImageView
         android:id="@+id/content_img_type"
@@ -14,11 +17,12 @@
 
     <TextView
         android:id="@+id/content_txt_name"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_vertical"
         android:layout_marginStart="30dp"
         android:layout_marginLeft="30dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
         tools:text="Lorem Ipsum"/>
 
 </FrameLayout>
