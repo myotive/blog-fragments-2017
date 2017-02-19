@@ -42,6 +42,10 @@ public class ContentAdapter extends RecyclerView.Adapter<ContentAdapter.ContentV
         this.notifyDataSetChanged();
     }
 
+    public List<Content> getContents() {
+        return contents;
+    }
+
     /**
      * Probably not best to do this here, but since I'm using this across modules, I didn't want
      * to have to presort.

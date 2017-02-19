@@ -22,7 +22,6 @@ import java.util.List;
 
 public class RepositoryAdapter extends RecyclerView.Adapter<RepositoryAdapter.RepositoryViewHolder> {
 
-
     public interface RepositoryItemClick{
         void OnRepositoryItemClick(View view, Repository item);
     }
@@ -46,6 +45,10 @@ public class RepositoryAdapter extends RecyclerView.Adapter<RepositoryAdapter.Re
 
     public void setRepositoryItemClick(RepositoryItemClick repositoryItemClick){
         this.itemClickCallback = repositoryItemClick;
+    }
+
+    public List<Repository> getRepositories() {
+        return repositories;
     }
 
     @Override
