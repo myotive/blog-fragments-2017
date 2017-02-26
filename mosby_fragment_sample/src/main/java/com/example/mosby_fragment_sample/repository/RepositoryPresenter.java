@@ -1,19 +1,10 @@
 package com.example.mosby_fragment_sample.repository;
 
-import android.app.Activity;
-import android.content.Intent;
 import android.util.Log;
-import android.view.View;
 
 import com.example.common.network.GitHubAPI;
 import com.example.common.network.models.Repository;
-import com.example.common.ui.ProgressBarProvider;
-import com.example.common.ui.adapters.RepositoryAdapter;
-import com.example.common.utilities.FragmentUtility;
-import com.example.common.utilities.TransitionType;
 import com.example.mosby_fragment_sample.BuildConfig;
-import com.example.mosby_fragment_sample.R;
-import com.example.mosby_fragment_sample.content.ContentFragment;
 import com.hannesdorfmann.mosby.mvp.MvpBasePresenter;
 
 import java.util.List;
@@ -33,9 +24,9 @@ public class RepositoryPresenter extends MvpBasePresenter<RepositoryContract.Vie
 
     // Dependencies
     private GitHubAPI gitHubAPI;
-    private RepositoryAdapter.RepositoryItemClick itemClickCallback;
 
     private List<Repository> repositories;
+    private Call<List<Repository>> reposCall;
 
     public RepositoryPresenter(GitHubAPI gitHubAPI){
         this.gitHubAPI = gitHubAPI;
@@ -47,8 +38,9 @@ public class RepositoryPresenter extends MvpBasePresenter<RepositoryContract.Vie
 
         getView().showLoading(pullToRefresh);
 
-        // TODO: 2/19/2017  Need to handle cancelled network call in detach view
-        gitHubAPI.GetRepos(BuildConfig.GITHUB_OWNER).enqueue(new Callback<List<Repository>>() {
+        reposCall = gitHubAPI.GetRepos(BuildConfig.GITHUB_OWNER);
+
+        reposCall.enqueue(new Callback<List<Repository>>() {
             @Override
             public void onResponse(Call<List<Repository>> call, Response<List<Repository>> response) {
                 if(response.isSuccessful() && isViewAttached()){
