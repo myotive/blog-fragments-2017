@@ -51,10 +51,4 @@ dependencies {
 
     // -- Picasso
     compile 'com.squareup.picasso:picasso:2.5.2'
-
-    // -- Joda Time
-    compile 'net.danlew:android.joda:2.9.5'
-    compile ('com.fatboyindustrial.gson-jodatime-serialisers:gson-jodatime-serialisers:1.5.0', {
-        exclude module: 'joda-time'
-    })
 }

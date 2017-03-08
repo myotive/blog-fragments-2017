@@ -11,9 +11,6 @@ import android.widget.TextView;
 import com.example.common.R;
 import com.example.common.network.models.Repository;
 
-import org.joda.time.format.DateTimeFormat;
-import org.joda.time.format.DateTimeFormatter;
-
 import java.util.List;
 
 /**
@@ -26,11 +23,11 @@ public class RepositoryAdapter extends RecyclerView.Adapter<RepositoryAdapter.Re
         void OnRepositoryItemClick(View view, Repository item);
     }
 
+    android.text.format.DateFormat df = new android.text.format.DateFormat();
+
     private Context context;
     private List<Repository> repositories;
     private RepositoryItemClick itemClickCallback;
-
-    private DateTimeFormatter dtf = DateTimeFormat.forPattern("MM/dd/yyyy hh:mm a");
 
     public RepositoryAdapter(Context context, List<Repository> repositories, RepositoryItemClick itemClickCallback){
         this.context = context;
@@ -64,7 +61,7 @@ public class RepositoryAdapter extends RecyclerView.Adapter<RepositoryAdapter.Re
 
         holder.name.setText(repository.getName());
         holder.desc.setText(repository.getDescription());
-        holder.created_at.setText(dtf.print(repository.getCreated_at()));
+        holder.created_at.setText(df.format("MM/dd/yyyy hh:mm a", repository.getCreated_at()));
     }
 
     @Override

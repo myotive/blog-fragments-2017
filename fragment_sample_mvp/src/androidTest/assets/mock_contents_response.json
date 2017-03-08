@@ -1,0 +1,226 @@
+[
+  {
+    "name": ".gitignore",
+    "path": ".gitignore",
+    "sha": "89be6106bb8261f9c291e5cc4ccbeaa8ab9fdc20",
+    "size": 514,
+    "url": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/.gitignore?ref=master",
+    "html_url": "https://github.com/myotive/blog-fragments-2017/blob/master/.gitignore",
+    "git_url": "https://api.github.com/repos/myotive/blog-fragments-2017/git/blobs/89be6106bb8261f9c291e5cc4ccbeaa8ab9fdc20",
+    "download_url": "https://raw.githubusercontent.com/myotive/blog-fragments-2017/master/.gitignore",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/.gitignore?ref=master",
+      "git": "https://api.github.com/repos/myotive/blog-fragments-2017/git/blobs/89be6106bb8261f9c291e5cc4ccbeaa8ab9fdc20",
+      "html": "https://github.com/myotive/blog-fragments-2017/blob/master/.gitignore"
+    }
+  },
+  {
+    "name": "README.md",
+    "path": "README.md",
+    "sha": "6ea310e6852e01456b52e07cdc78808c56858d8a",
+    "size": 112,
+    "url": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/README.md?ref=master",
+    "html_url": "https://github.com/myotive/blog-fragments-2017/blob/master/README.md",
+    "git_url": "https://api.github.com/repos/myotive/blog-fragments-2017/git/blobs/6ea310e6852e01456b52e07cdc78808c56858d8a",
+    "download_url": "https://raw.githubusercontent.com/myotive/blog-fragments-2017/master/README.md",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/README.md?ref=master",
+      "git": "https://api.github.com/repos/myotive/blog-fragments-2017/git/blobs/6ea310e6852e01456b52e07cdc78808c56858d8a",
+      "html": "https://github.com/myotive/blog-fragments-2017/blob/master/README.md"
+    }
+  },
+  {
+    "name": "build.gradle",
+    "path": "build.gradle",
+    "sha": "83a6ca5a75540b424da1a51575caec67fbc6e17f",
+    "size": 541,
+    "url": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/build.gradle?ref=master",
+    "html_url": "https://github.com/myotive/blog-fragments-2017/blob/master/build.gradle",
+    "git_url": "https://api.github.com/repos/myotive/blog-fragments-2017/git/blobs/83a6ca5a75540b424da1a51575caec67fbc6e17f",
+    "download_url": "https://raw.githubusercontent.com/myotive/blog-fragments-2017/master/build.gradle",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/build.gradle?ref=master",
+      "git": "https://api.github.com/repos/myotive/blog-fragments-2017/git/blobs/83a6ca5a75540b424da1a51575caec67fbc6e17f",
+      "html": "https://github.com/myotive/blog-fragments-2017/blob/master/build.gradle"
+    }
+  },
+  {
+    "name": "common",
+    "path": "common",
+    "sha": "9f53d41862898c6f0800b8fcd184317ed0832d92",
+    "size": 0,
+    "url": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/common?ref=master",
+    "html_url": "https://github.com/myotive/blog-fragments-2017/tree/master/common",
+    "git_url": "https://api.github.com/repos/myotive/blog-fragments-2017/git/trees/9f53d41862898c6f0800b8fcd184317ed0832d92",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/common?ref=master",
+      "git": "https://api.github.com/repos/myotive/blog-fragments-2017/git/trees/9f53d41862898c6f0800b8fcd184317ed0832d92",
+      "html": "https://github.com/myotive/blog-fragments-2017/tree/master/common"
+    }
+  },
+  {
+    "name": "conductor_sample",
+    "path": "conductor_sample",
+    "sha": "703f728a13cbef50a94127dc93b636277fe1c201",
+    "size": 0,
+    "url": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/conductor_sample?ref=master",
+    "html_url": "https://github.com/myotive/blog-fragments-2017/tree/master/conductor_sample",
+    "git_url": "https://api.github.com/repos/myotive/blog-fragments-2017/git/trees/703f728a13cbef50a94127dc93b636277fe1c201",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/conductor_sample?ref=master",
+      "git": "https://api.github.com/repos/myotive/blog-fragments-2017/git/trees/703f728a13cbef50a94127dc93b636277fe1c201",
+      "html": "https://github.com/myotive/blog-fragments-2017/tree/master/conductor_sample"
+    }
+  },
+  {
+    "name": "fragment_sample",
+    "path": "fragment_sample",
+    "sha": "d5c48fa4d0db98107b3b4e31aa712bb68a2ba39f",
+    "size": 0,
+    "url": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/fragment_sample?ref=master",
+    "html_url": "https://github.com/myotive/blog-fragments-2017/tree/master/fragment_sample",
+    "git_url": "https://api.github.com/repos/myotive/blog-fragments-2017/git/trees/d5c48fa4d0db98107b3b4e31aa712bb68a2ba39f",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/fragment_sample?ref=master",
+      "git": "https://api.github.com/repos/myotive/blog-fragments-2017/git/trees/d5c48fa4d0db98107b3b4e31aa712bb68a2ba39f",
+      "html": "https://github.com/myotive/blog-fragments-2017/tree/master/fragment_sample"
+    }
+  },
+  {
+    "name": "fragment_sample_mvp",
+    "path": "fragment_sample_mvp",
+    "sha": "c7b4b6376ae56864989f1e7fe93809072f606f4a",
+    "size": 0,
+    "url": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/fragment_sample_mvp?ref=master",
+    "html_url": "https://github.com/myotive/blog-fragments-2017/tree/master/fragment_sample_mvp",
+    "git_url": "https://api.github.com/repos/myotive/blog-fragments-2017/git/trees/c7b4b6376ae56864989f1e7fe93809072f606f4a",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/fragment_sample_mvp?ref=master",
+      "git": "https://api.github.com/repos/myotive/blog-fragments-2017/git/trees/c7b4b6376ae56864989f1e7fe93809072f606f4a",
+      "html": "https://github.com/myotive/blog-fragments-2017/tree/master/fragment_sample_mvp"
+    }
+  },
+  {
+    "name": "gradle.properties",
+    "path": "gradle.properties",
+    "sha": "aac7c9b4614ccfde6c721f24994cf30885a791d0",
+    "size": 730,
+    "url": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/gradle.properties?ref=master",
+    "html_url": "https://github.com/myotive/blog-fragments-2017/blob/master/gradle.properties",
+    "git_url": "https://api.github.com/repos/myotive/blog-fragments-2017/git/blobs/aac7c9b4614ccfde6c721f24994cf30885a791d0",
+    "download_url": "https://raw.githubusercontent.com/myotive/blog-fragments-2017/master/gradle.properties",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/gradle.properties?ref=master",
+      "git": "https://api.github.com/repos/myotive/blog-fragments-2017/git/blobs/aac7c9b4614ccfde6c721f24994cf30885a791d0",
+      "html": "https://github.com/myotive/blog-fragments-2017/blob/master/gradle.properties"
+    }
+  },
+  {
+    "name": "gradle",
+    "path": "gradle",
+    "sha": "787fa8b105956e00dc90953a832ce5d15782cc6e",
+    "size": 0,
+    "url": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/gradle?ref=master",
+    "html_url": "https://github.com/myotive/blog-fragments-2017/tree/master/gradle",
+    "git_url": "https://api.github.com/repos/myotive/blog-fragments-2017/git/trees/787fa8b105956e00dc90953a832ce5d15782cc6e",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/gradle?ref=master",
+      "git": "https://api.github.com/repos/myotive/blog-fragments-2017/git/trees/787fa8b105956e00dc90953a832ce5d15782cc6e",
+      "html": "https://github.com/myotive/blog-fragments-2017/tree/master/gradle"
+    }
+  },
+  {
+    "name": "gradlew",
+    "path": "gradlew",
+    "sha": "9d82f78915133e1c35a6ea51252590fb38efac2f",
+    "size": 4971,
+    "url": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/gradlew?ref=master",
+    "html_url": "https://github.com/myotive/blog-fragments-2017/blob/master/gradlew",
+    "git_url": "https://api.github.com/repos/myotive/blog-fragments-2017/git/blobs/9d82f78915133e1c35a6ea51252590fb38efac2f",
+    "download_url": "https://raw.githubusercontent.com/myotive/blog-fragments-2017/master/gradlew",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/gradlew?ref=master",
+      "git": "https://api.github.com/repos/myotive/blog-fragments-2017/git/blobs/9d82f78915133e1c35a6ea51252590fb38efac2f",
+      "html": "https://github.com/myotive/blog-fragments-2017/blob/master/gradlew"
+    }
+  },
+  {
+    "name": "gradlew.bat",
+    "path": "gradlew.bat",
+    "sha": "8a0b282aa6885fb573c106b3551f7275c5f17e8e",
+    "size": 2314,
+    "url": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/gradlew.bat?ref=master",
+    "html_url": "https://github.com/myotive/blog-fragments-2017/blob/master/gradlew.bat",
+    "git_url": "https://api.github.com/repos/myotive/blog-fragments-2017/git/blobs/8a0b282aa6885fb573c106b3551f7275c5f17e8e",
+    "download_url": "https://raw.githubusercontent.com/myotive/blog-fragments-2017/master/gradlew.bat",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/gradlew.bat?ref=master",
+      "git": "https://api.github.com/repos/myotive/blog-fragments-2017/git/blobs/8a0b282aa6885fb573c106b3551f7275c5f17e8e",
+      "html": "https://github.com/myotive/blog-fragments-2017/blob/master/gradlew.bat"
+    }
+  },
+  {
+    "name": "mosby_fragment_sample",
+    "path": "mosby_fragment_sample",
+    "sha": "c991ae2f7ae3a0292bd4500e73837da2eb73a1fd",
+    "size": 0,
+    "url": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/mosby_fragment_sample?ref=master",
+    "html_url": "https://github.com/myotive/blog-fragments-2017/tree/master/mosby_fragment_sample",
+    "git_url": "https://api.github.com/repos/myotive/blog-fragments-2017/git/trees/c991ae2f7ae3a0292bd4500e73837da2eb73a1fd",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/mosby_fragment_sample?ref=master",
+      "git": "https://api.github.com/repos/myotive/blog-fragments-2017/git/trees/c991ae2f7ae3a0292bd4500e73837da2eb73a1fd",
+      "html": "https://github.com/myotive/blog-fragments-2017/tree/master/mosby_fragment_sample"
+    }
+  },
+  {
+    "name": "mosby_sample",
+    "path": "mosby_sample",
+    "sha": "534071bdb5f865c826a059ff1cab802433671200",
+    "size": 0,
+    "url": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/mosby_sample?ref=master",
+    "html_url": "https://github.com/myotive/blog-fragments-2017/tree/master/mosby_sample",
+    "git_url": "https://api.github.com/repos/myotive/blog-fragments-2017/git/trees/534071bdb5f865c826a059ff1cab802433671200",
+    "download_url": null,
+    "type": "dir",
+    "_links": {
+      "self": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/mosby_sample?ref=master",
+      "git": "https://api.github.com/repos/myotive/blog-fragments-2017/git/trees/534071bdb5f865c826a059ff1cab802433671200",
+      "html": "https://github.com/myotive/blog-fragments-2017/tree/master/mosby_sample"
+    }
+  },
+  {
+    "name": "settings.gradle",
+    "path": "settings.gradle",
+    "sha": "1466d69a0f529481dad85b8a2e02868e3be6f27b",
+    "size": 126,
+    "url": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/settings.gradle?ref=master",
+    "html_url": "https://github.com/myotive/blog-fragments-2017/blob/master/settings.gradle",
+    "git_url": "https://api.github.com/repos/myotive/blog-fragments-2017/git/blobs/1466d69a0f529481dad85b8a2e02868e3be6f27b",
+    "download_url": "https://raw.githubusercontent.com/myotive/blog-fragments-2017/master/settings.gradle",
+    "type": "file",
+    "_links": {
+      "self": "https://api.github.com/repos/myotive/blog-fragments-2017/contents/settings.gradle?ref=master",
+      "git": "https://api.github.com/repos/myotive/blog-fragments-2017/git/blobs/1466d69a0f529481dad85b8a2e02868e3be6f27b",
+      "html": "https://github.com/myotive/blog-fragments-2017/blob/master/settings.gradle"
+    }
+  }
+]

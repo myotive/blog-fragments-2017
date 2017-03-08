@@ -7,8 +7,6 @@ import com.example.common.di.ApplicationComponent;
 import com.example.common.di.DaggerApplicationComponent;
 import com.example.common.di.modules.NetworkModule;
 
-import net.danlew.android.joda.JodaTimeAndroid;
-
 /**
  * Created by myotive on 2/12/2017.
  */
@@ -32,9 +30,6 @@ public class BaseApplication extends Application {
     @Override
     public void onCreate() {
         super.onCreate();
-
-        // Init Joda Time
-        JodaTimeAndroid.init(this);
 
         // Init dagger application component
         applicationComponent = DaggerApplicationComponent

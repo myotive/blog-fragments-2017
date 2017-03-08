@@ -2,9 +2,8 @@ package com.example.common.network.models;
 
 import com.google.gson.annotations.Expose;
 
-import org.joda.time.DateTime;
-
 import java.io.Serializable;
+import java.util.Date;
 
 /**
  * Created by myotive on 2/12/2017.
@@ -20,7 +19,7 @@ public class Repository implements Serializable {
     @Expose
     private Owner owner;
     @Expose
-    private DateTime created_at;
+    private Date created_at;
 
     public String getId() {
         return id;
@@ -54,11 +53,11 @@ public class Repository implements Serializable {
         this.owner = owner;
     }
 
-    public DateTime getCreated_at() {
+    public Date getCreated_at() {
         return created_at;
     }
 
-    public void setCreated_at(DateTime created_at) {
+    public void setCreated_at(Date created_at) {
         this.created_at = created_at;
     }
 }

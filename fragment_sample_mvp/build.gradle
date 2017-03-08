@@ -74,6 +74,12 @@ dependencies {
 
     androidTestCompile 'com.github.fabioCollini:DaggerMock:0.6.2'
 
+    androidTestCompile ('com.jakewharton.espresso:okhttp3-idling-resource:1.0.0',{
+        exclude group: 'com.android.support', module: 'support-annotations'
+        exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.squareup.okhttp3', module: 'okhttp'
+    })
+
     androidTestCompile ('com.squareup.okhttp3:mockwebserver:3.5.0', {
         exclude group: 'com.squareup.okio', module: 'okio'
         exclude group: 'com.squareup.okhttp3', module: 'okhttp'

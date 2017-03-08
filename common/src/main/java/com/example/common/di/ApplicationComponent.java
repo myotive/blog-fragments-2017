@@ -5,6 +5,7 @@ import com.example.common.di.scopes.ApplicationScope;
 import com.example.common.network.GitHubAPI;
 
 import dagger.Component;
+import okhttp3.OkHttpClient;
 
 /**
  * Created by myotive on 2/12/2017.
@@ -14,4 +15,5 @@ import dagger.Component;
 public interface ApplicationComponent {
 
     GitHubAPI githubapi();
+    OkHttpClient okhttp();
 }
