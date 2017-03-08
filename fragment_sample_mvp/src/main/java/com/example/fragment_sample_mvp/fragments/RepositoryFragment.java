@@ -49,7 +49,7 @@ public class RepositoryFragment extends Fragment
     private ActivityComponent activityComponent;
 
     @Inject
-    RepositoryPresenter presenter;
+    RepositoryContract.Presenter presenter;
 
     @BindView(R.id.rv_repository)
     RecyclerView repositoryRecyclerView;

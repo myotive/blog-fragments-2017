@@ -39,7 +39,7 @@ public class ContentFragment extends Fragment implements ContentContract.View {
     private ActivityComponent activityComponent;
 
     @Inject
-    ContentPresenter presenter;
+    ContentContract.Presenter presenter;
 
     @BindView(R.id.rv_content)
     RecyclerView contentRecyclerView;

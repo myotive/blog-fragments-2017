@@ -5,6 +5,8 @@ import com.example.fragment_sample_mvp.di.modules.PresenterModule;
 import com.example.fragment_sample_mvp.di.scopes.ActivityScope;
 import com.example.fragment_sample_mvp.fragments.ContentFragment;
 import com.example.fragment_sample_mvp.fragments.RepositoryFragment;
+import com.example.fragment_sample_mvp.fragments.content.ContentPresenter;
+import com.example.fragment_sample_mvp.fragments.repository.RepositoryPresenter;
 
 import dagger.Component;
 
@@ -17,4 +19,7 @@ import dagger.Component;
 public interface ActivityComponent {
     void inject(RepositoryFragment fragment);
     void inject(ContentFragment fragment);
+
+    RepositoryPresenter repositoryPresenter();
+    ContentPresenter contactPresenter();
 }
