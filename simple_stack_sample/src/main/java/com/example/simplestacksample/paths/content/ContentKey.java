@@ -36,10 +36,4 @@ public abstract class ContentKey extends BaseKey {
     public static ContentKey create(Repository repository) {
         return new AutoValue_ContentKey(repository);
     }
-
-    @NonNull
-    @Override
-    public ViewChangeHandler viewChangeHandler() {
-        return new NoOpViewChangeHandler();
-    }
 }

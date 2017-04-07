@@ -28,10 +28,4 @@ public abstract class RepositoryKey extends BaseKey {
     public static RepositoryKey create(String actionBarTitle) {
         return new AutoValue_RepositoryKey(actionBarTitle);
     }
-
-    @NonNull
-    @Override
-    public ViewChangeHandler viewChangeHandler() {
-        return new SegueViewChangeHandler();
-    }
 }
