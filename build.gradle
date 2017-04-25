@@ -20,6 +20,19 @@ allprojects {
     }
 }
 
+ext {
+    compileSdkVersion = 25
+    buildToolsVersion = '25.0.2'
+    targetSdkVersion = compileSdkVersion
+    minSdkVersion = 16
+
+    butterKnifeVersion = '8.5.1'
+    daggerVersion = '2.8'
+    espressoVersion = '2.2.2'
+    junitVersion = '4.12'
+    supportLibVersion = '25.3.1'
+}
+
 task clean(type: Delete) {
     delete rootProject.buildDir
 }

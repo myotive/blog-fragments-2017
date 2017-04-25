@@ -1,12 +1,12 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
     defaultConfig {
         applicationId "com.example.fragment_sample_mvp"
-        minSdkVersion 16
-        targetSdkVersion 25
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -30,35 +30,32 @@ dependencies {
 
     compile project(':common')
 
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
+    androidTestCompile("com.android.support.test.espresso:espresso-core:$espressoVersion", {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 
-    compile 'com.android.support:appcompat-v7:25.1.1'
+    compile "com.android.support:appcompat-v7:$supportLibVersion"
 
-    testCompile 'junit:junit:4.12'
+    testCompile "junit:junit:$junitVersion"
 
     // -- Butter Knife view injections
-    compile 'com.jakewharton:butterknife:8.5.1'
-    annotationProcessor 'com.jakewharton:butterknife-compiler:8.5.1'
+    compile "com.jakewharton:butterknife:$butterKnifeVersion"
+    annotationProcessor "com.jakewharton:butterknife-compiler:$butterKnifeVersion"
 
     // -- Dagger 2
-    compile 'com.google.dagger:dagger:2.8'
-    annotationProcessor 'com.google.dagger:dagger-compiler:2.8'
-    androidTestAnnotationProcessor 'com.google.dagger:dagger-compiler:2.8'
-    testAnnotationProcessor 'com.google.dagger:dagger-compiler:2.8'
+    compile "com.google.dagger:dagger:$daggerVersion"
+    annotationProcessor "com.google.dagger:dagger-compiler:$daggerVersion"
+    androidTestAnnotationProcessor "com.google.dagger:dagger-compiler:$daggerVersion"
+    testAnnotationProcessor "com.google.dagger:dagger-compiler:$daggerVersion"
 
-    androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
-        exclude group: 'com.android.support', module: 'support-annotations'
-    })
-
-    androidTestCompile('com.android.support.test.espresso:espresso-contrib:2.2.1', {
+    androidTestCompile("com.android.support.test.espresso:espresso-contrib:$espressoVersion", {
         exclude group: 'com.android.support', module: 'support-annotations'
         exclude group: 'com.android.support', module: 'support-v4'
+        exclude group: 'com.android.support', module: 'design'
         exclude module: 'recyclerview-v7'
     })
 
-    androidTestCompile('com.android.support.test.espresso:espresso-intents:2.2.2', {
+    androidTestCompile("com.android.support.test.espresso:espresso-intents:$espressoVersion", {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
 
