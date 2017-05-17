@@ -1,5 +1,6 @@
 package com.example.simplestacksample;
 
+import android.annotation.SuppressLint;
 import android.content.Context;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -122,7 +123,7 @@ public class MainActivity
         //noinspection ResourceType
         return (MainActivity) context.getSystemService(TAG);
     }
-
+    @SuppressLint("WrongConstant")
     public static GitHubAPI getApi(Context context) {
         // noinspection ResourceType
         return (GitHubAPI) context.getSystemService("GITHUB_API");
